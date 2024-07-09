@@ -1,0 +1,19 @@
+{
+    "name": "MIG.App.States",
+    "rootNamespace": "MIG.App.States",
+    "references": [
+        "GUID:c7e6a54e6e789184795e5208a563a2ae",
+        "GUID:0e2f01033ff75584bba22c0f08adfe3e",
+        "GUID:3b2f41c86b57bc749b1e0a1288f88f85",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

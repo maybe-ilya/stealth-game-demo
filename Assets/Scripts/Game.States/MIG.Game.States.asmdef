@@ -1,0 +1,8 @@
+{
+  "name": "MIG.Game.States",
+  "rootNamespace": "MIG.Game.States",
+  "references": [
+    "GUID:c7e6a54e6e789184795e5208a563a2ae",
+    "GUID:a776e09d285e9844980ad554335a7682"
+  ]
+}

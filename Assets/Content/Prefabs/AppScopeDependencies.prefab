@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7997225973980223559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2001454051591096348}
+  - component: {fileID: 2577270904868136548}
+  m_Layer: 0
+  m_Name: AppScopeDependencies
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2001454051591096348
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7997225973980223559}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2577270904868136548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7997225973980223559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b9378a4a62bff744aa3bd5af9f09f3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sceneLoadServiceSettings: {fileID: 11400000, guid: 10d4226ab56c0b14b9bd9fabcc1688c4,
+    type: 2}
+  _mainMenuAppStateSettings: {fileID: 11400000, guid: 9db6836cc0cb3674f8881ef8a8397ed1,
+    type: 2}
+  _playGameAppStateSettings: {fileID: 11400000, guid: 83029ac3cba72aa47a7a5a685facdd40,
+    type: 2}
+  _mobileInputUIPanelFactorySettings: {fileID: 0}
+  _defaultInputHandlerFactorySettings: {fileID: 11400000, guid: e1d31e58c28bdc841815efdc030f820c,
+    type: 2}
+  _loadingScreenFactorySettings: {fileID: 11400000, guid: 6865cf6a67008ba42b18f777b5680504,
+    type: 2}
+  _windowHandlerSettings: {fileID: 11400000, guid: 7b30c2968d4abf44fa1772e9c9936cad,
+    type: 2}
+  _mainMenuWindowFactorySettings: {fileID: 11400000, guid: 3688f23f9c337f54fb83ab3f69022cc1,
+    type: 2}

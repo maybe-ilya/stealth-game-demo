@@ -1,0 +1,17 @@
+{
+    "name": "MIG.SceneLoading",
+    "rootNamespace": "MIG.SceneLoading",
+    "references": [
+        "GUID:c7e6a54e6e789184795e5208a563a2ae",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

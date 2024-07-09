@@ -1,0 +1,30 @@
+{
+    "name": "MIG.Main",
+    "rootNamespace": "MIG.Main",
+    "references": [
+        "GUID:c7e6a54e6e789184795e5208a563a2ae",
+        "GUID:0e2f01033ff75584bba22c0f08adfe3e",
+        "GUID:f6fdf850f31427b4ba9667f10d42e788",
+        "GUID:a776e09d285e9844980ad554335a7682",
+        "GUID:b25531fe5839a1740b9016d7dc065fb9",
+        "GUID:58b100835f0afdb4dbbf024c4ca237dd",
+        "GUID:0265a45d8e8772a42ac47768f41a943a",
+        "GUID:3b2f41c86b57bc749b1e0a1288f88f85",
+        "GUID:1f8f48cad6192a24e85f426160d93f0d",
+        "GUID:58f654bd74f56944f8d157e61bfa70ea",
+        "GUID:9c1fe23aa6fcf3446a9c3a9966c772d2",
+        "GUID:48ea4e55626824a4d9beb8d7444dc7f7",
+        "GUID:b0f30582c8ba1fe469d1b102b4ec650d",
+        "GUID:a8de3c51c02180a40837c4f058eb91e8",
+        "GUID:d4a487dbc30ffbe4190d9971b801b8a8"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
