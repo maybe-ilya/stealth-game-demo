@@ -4,6 +4,7 @@ namespace MIG.API
     {
         void Start();
         void Play();
-        void Finish();
+        void Finish(GameModeResultData resultData);
+        void Cancel();
     }
 }

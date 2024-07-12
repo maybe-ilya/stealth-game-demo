@@ -3,7 +3,9 @@ using MIG.API;
 
 namespace MIG.App.States
 {
-    public sealed class MainMenuAppState : IMainMenuAppState
+    public sealed class MainMenuAppState :
+        IMainMenuAppState,
+        IExitableState
     {
         private readonly MainMenuAppStateSettings _settings;
         private readonly ISceneLoadService _sceneLoader;
@@ -34,7 +36,12 @@ namespace MIG.App.States
             _logger.Info("Going to main menu");
             await _sceneLoader.LoadSceneAsync(_settings.MainMenuSceneIndex);
             _uiService.OpenWindow<IMainMenuWindow>();
-            _playerService.SetUIInputMode();
+            _playerService.DeactivateInput();
+        }
+
+        public void Exit()
+        {
+            _uiService.CloseWindow<IMainMenuWindow>();
         }
     }
 }

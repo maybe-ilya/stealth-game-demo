@@ -6,9 +6,15 @@ namespace MIG.UI.Windows
     [CreateAssetMenu(menuName = AssetConsts.CREATE_ASSET_ROOT_MENU + "UI/" + nameof(WindowHandlerSettings))]
     public sealed class WindowHandlerSettings : ScriptableObject
     {
-        [SerializeField] [CheckObject] private WindowCanvas _windowCanvasPrefab;
-        [SerializeField] private string _viewCanvasName;
-        [SerializeField] private string _cacheCanvasName;
+        [SerializeField]
+        [CheckObject]
+        private WindowCanvas _windowCanvasPrefab;
+
+        [SerializeField]
+        private string _viewCanvasName;
+
+        [SerializeField]
+        private string _cacheCanvasName;
 
         public WindowCanvas WindowCanvasPrefab => _windowCanvasPrefab;
 

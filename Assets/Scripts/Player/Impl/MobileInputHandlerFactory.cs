@@ -1,12 +1,12 @@
 namespace MIG.Player
 {
-    public sealed class MobileInputHandlerFactory : IMultiModePlayerInputHandlerFactory
+    public sealed class MobileInputHandlerFactory : IActivatablePlayerInputHandlerFactory
     {
-        private readonly IMultiModePlayerInputHandlerFactory _baseInputHandlerFactory;
+        private readonly IActivatablePlayerInputHandlerFactory _baseInputHandlerFactory;
         private readonly IMobileInputUIPanelFactory _mobileInputUIPanelFactory;
 
         public MobileInputHandlerFactory(
-            IMultiModePlayerInputHandlerFactory baseInputHandlerFactory,
+            IActivatablePlayerInputHandlerFactory baseInputHandlerFactory,
             IMobileInputUIPanelFactory mobileInputUIPanelFactory
         )
         {
@@ -14,7 +14,7 @@ namespace MIG.Player
             _mobileInputUIPanelFactory = mobileInputUIPanelFactory;
         }
 
-        public IMultiModePlayerInputHandler Create()
+        public IActivatablePlayerInputHandler Create()
             => new MobileInputHandler(_baseInputHandlerFactory.Create(), _mobileInputUIPanelFactory.Create());
     }
 }

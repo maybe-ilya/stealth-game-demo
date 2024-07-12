@@ -2,9 +2,9 @@ namespace MIG.Player.Impl
 {
     public sealed class LocalPlayerFactory : ILocalPlayerFactory
     {
-        private readonly IMultiModePlayerInputHandlerFactory _playerInputHandlerFactory;
+        private readonly IActivatablePlayerInputHandlerFactory _playerInputHandlerFactory;
 
-        public LocalPlayerFactory(IMultiModePlayerInputHandlerFactory playerInputHandlerFactory)
+        public LocalPlayerFactory(IActivatablePlayerInputHandlerFactory playerInputHandlerFactory)
         {
             _playerInputHandlerFactory = playerInputHandlerFactory;
         }

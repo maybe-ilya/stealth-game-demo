@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e42fac4063098974895718a692364431, type: 3}
   m_Name: LoadingScreenFactorySettings
   m_EditorClassIdentifier: 
-  _loadingScreenPrefab: {fileID: 3752956170679164199, guid: 8cd1734bfa743cc499765ec6f882b419,
+  _loadingScreenPrefab: {fileID: 833654638782388738, guid: 71d7811ab93da164a888723a4eb09099,
     type: 3}

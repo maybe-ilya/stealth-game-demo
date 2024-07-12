@@ -18,10 +18,10 @@ namespace MIG.Player
         public void Init()
             => _localPlayer = _localPlayerFactory.Create();
 
-        public void SetGameplayInputMode()
-            => _localPlayer.SetGameplayInputMode();
+        public void ActivateInput()
+            => _localPlayer.ActivateInput();
 
-        public void SetUIInputMode()
-            => _localPlayer.SetUIInputMode();
+        public void DeactivateInput()
+            => _localPlayer.DeactivateInput();
     }
 }

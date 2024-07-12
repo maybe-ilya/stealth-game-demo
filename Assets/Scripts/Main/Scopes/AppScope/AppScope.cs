@@ -15,6 +15,9 @@ namespace MIG.Main
         public ITimerService TimerService { get; }
         public IUIService UIService { get; }
         public ILoadingScreenService LoadingScreenService { get; }
+        public IGameActorService GameActorService { get; }
+        public INavigationManagerUpdater NavigationManagerUpdater { get; }
+        public IEscapeModeTimerNotifyInvoker EscapeModeTimerNotifyInvoker { get; }
 
         public AppScope(
             IAppStateService appStateService,
@@ -27,7 +30,10 @@ namespace MIG.Main
             ITimeService timeService,
             ITimerService timerService,
             IUIService uiService,
-            ILoadingScreenService loadingScreenService
+            ILoadingScreenService loadingScreenService,
+            IGameActorService gameActorService,
+            INavigationManagerUpdater navigationManagerUpdater,
+            IEscapeModeTimerNotifyInvoker escapeModeTimerNotifyInvoker
         )
         {
             AppStateService = appStateService;
@@ -41,6 +47,9 @@ namespace MIG.Main
             TimerService = timerService;
             UIService = uiService;
             LoadingScreenService = loadingScreenService;
+            GameActorService = gameActorService;
+            NavigationManagerUpdater = navigationManagerUpdater;
+            EscapeModeTimerNotifyInvoker = escapeModeTimerNotifyInvoker;
         }
 
         public void Activate()

@@ -7,7 +7,8 @@ namespace MIG.Editor
         true)]
     public sealed class CheckObjectPropertyDrawerSettings : GameConfig
     {
-        [SerializeField] private Color _validObjectColor = Color.green, _invalidObjectColor = Color.red;
+        [SerializeField]
+        private Color _validObjectColor = Color.green, _invalidObjectColor = Color.red;
 
         public Color ValidObjectColor => _validObjectColor;
 

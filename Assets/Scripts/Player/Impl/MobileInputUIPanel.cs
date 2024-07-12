@@ -6,7 +6,9 @@ namespace MIG.Player.Impl
 {
     public sealed class MobileInputUIPanel : MonoBehaviour, IMobileInputUIPanel
     {
-        [SerializeField] [CheckObject] private CanvasGroup _canvasGroup;
+        [SerializeField]
+        [CheckObject]
+        private CanvasGroup _canvasGroup;
 
         public void Activate()
         {

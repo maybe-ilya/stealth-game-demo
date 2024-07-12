@@ -50,7 +50,8 @@ MonoBehaviour:
     type: 2}
   _playGameAppStateSettings: {fileID: 11400000, guid: 83029ac3cba72aa47a7a5a685facdd40,
     type: 2}
-  _mobileInputUIPanelFactorySettings: {fileID: 0}
+  _mobileInputUIPanelFactorySettings: {fileID: 11400000, guid: 4d75e8530a7f6f54fbe61ecf7fcba0db,
+    type: 2}
   _defaultInputHandlerFactorySettings: {fileID: 11400000, guid: e1d31e58c28bdc841815efdc030f820c,
     type: 2}
   _loadingScreenFactorySettings: {fileID: 11400000, guid: 6865cf6a67008ba42b18f777b5680504,
@@ -58,4 +59,14 @@ MonoBehaviour:
   _windowHandlerSettings: {fileID: 11400000, guid: 7b30c2968d4abf44fa1772e9c9936cad,
     type: 2}
   _mainMenuWindowFactorySettings: {fileID: 11400000, guid: 3688f23f9c337f54fb83ab3f69022cc1,
+    type: 2}
+  _gameOverWindowFactorySettings: {fileID: 11400000, guid: ff2685c8b022b3447a224ebc8da6a397,
+    type: 2}
+  _playerHUDFactorySettings: {fileID: 11400000, guid: 2dfcb51422355d14582881c16b2efa40,
+    type: 2}
+  _characterFactorySettings: {fileID: 11400000, guid: e5f597db7cdf9364180673e01b39943c,
+    type: 2}
+  _cameraActorFactorySettings: {fileID: 11400000, guid: 9a1b1c8368223d641aeb86c223a9bcc2,
+    type: 2}
+  _banditFactorySettings: {fileID: 11400000, guid: d3df96b0edeaf0949bae660bd3e9d74a,
     type: 2}

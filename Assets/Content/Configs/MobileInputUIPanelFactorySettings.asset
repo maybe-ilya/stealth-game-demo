@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92d896c08bdd5c498d9c4ad05742aaf, type: 3}
   m_Name: MobileInputUIPanelFactorySettings
   m_EditorClassIdentifier: 
-  _panelPrefab: {fileID: 0}
+  _panelPrefab: {fileID: 5939407379901228459, guid: d0c7e8bfe7336164091eefa5b29913c5,
+    type: 3}

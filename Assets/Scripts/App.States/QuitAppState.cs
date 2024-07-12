@@ -1,7 +1,13 @@
 using JetBrains.Annotations;
 using MIG.API;
 using MIG.Utils;
+
+#if UNITY_EDITOR
 using UnityEditor;
+
+#else
+using UnityEngine;
+#endif
 
 namespace MIG.App.States
 {

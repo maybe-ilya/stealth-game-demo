@@ -8,7 +8,9 @@ namespace MIG.UI.Windows
     [RequireComponent(typeof(CanvasGroup))]
     public abstract class AbstractWindow : MonoBehaviour, IWindow
     {
-        [SerializeField] [CheckObject] private CanvasGroup _canvasGroup;
+        [SerializeField]
+        [CheckObject]
+        private CanvasGroup _canvasGroup;
 
         private const float OPEN_ALPHA = 1.0f, CLOSE_ALPHA = 0.0f;
 

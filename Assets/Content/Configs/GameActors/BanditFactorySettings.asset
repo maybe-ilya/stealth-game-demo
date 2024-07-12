@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec82a715328b69449d505c3fa0d993f, type: 3}
+  m_Name: BanditFactorySettings
+  m_EditorClassIdentifier: 
+  _banditPrefabs:
+  - {fileID: 7256165972941697177, guid: 9727fbb7f6fdba942a374acc5c4ef3d2, type: 3}
+  - {fileID: 7256165972941697177, guid: 8d3d99d578687e54a867c45a1464ce73, type: 3}
+  - {fileID: 7256165972941697177, guid: b09ced772205e3845bfaa52c396261dc, type: 3}

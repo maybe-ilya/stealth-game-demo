@@ -3,13 +3,13 @@ using UnityEngine;
 
 namespace MIG.Player
 {
-    public sealed class MobileInputHandler : IMultiModePlayerInputHandler
+    public sealed class MobileInputHandler : IActivatablePlayerInputHandler
     {
-        private readonly IMultiModePlayerInputHandler _baseInputHandler;
+        private readonly IActivatablePlayerInputHandler _baseInputHandler;
         private readonly IMobileInputUIPanel _mobileInputPanel;
 
         public MobileInputHandler(
-            IMultiModePlayerInputHandler baseInputHandler,
+            IActivatablePlayerInputHandler baseInputHandler,
             IMobileInputUIPanel mobileInputPanel
         )
         {
@@ -23,16 +23,16 @@ namespace MIG.Player
             remove => _baseInputHandler.OnMove -= value;
         }
 
-        public void SetGameInputMode()
+        public void Activate()
         {
-            _baseInputHandler.SetGameInputMode();
+            _baseInputHandler.Activate();
             _mobileInputPanel.Activate();
         }
 
-        public void SetUIInputMode()
+        public void Deactivate()
         {
             _mobileInputPanel.Deactivate();
-            _baseInputHandler.SetUIInputMode();
+            _baseInputHandler.Deactivate();
         }
     }
 }

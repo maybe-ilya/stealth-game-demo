@@ -2,7 +2,7 @@ using UObject = UnityEngine.Object;
 
 namespace MIG.Player.Impl
 {
-    public sealed class DefaultInputHandlerFactory : IMultiModePlayerInputHandlerFactory
+    public sealed class DefaultInputHandlerFactory : IActivatablePlayerInputHandlerFactory
     {
         private readonly DefaultInputHandlerFactorySettings _settings;
 
@@ -11,7 +11,7 @@ namespace MIG.Player.Impl
             _settings = settings;
         }
 
-        public IMultiModePlayerInputHandler Create()
+        public IActivatablePlayerInputHandler Create()
         {
             var inputModule = UObject.Instantiate(_settings.InputModulePrefab);
             UObject.DontDestroyOnLoad(inputModule.gameObject);

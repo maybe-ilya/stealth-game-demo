@@ -7,7 +7,9 @@ namespace MIG.Editor
         "Project/Scene Switcher Settings")]
     internal sealed class SceneSwitcherSettings : GameConfig
     {
-        [SerializeField] [SceneIndex] private int _bootstrapSceneIndex, _mainMenuSceneIndex, _gameSceneIndex;
+        [SerializeField]
+        [SceneIndex]
+        private int _bootstrapSceneIndex, _mainMenuSceneIndex, _gameSceneIndex;
 
         public int BootstrapSceneIndex => _bootstrapSceneIndex;
 

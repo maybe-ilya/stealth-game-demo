@@ -4,19 +4,19 @@ namespace MIG.Player.Impl
 {
     public sealed class LocalPlayer : ILocalPlayer
     {
-        private readonly IMultiModePlayerInputHandler _playerInputHandler;
+        private readonly IActivatablePlayerInputHandler _playerInputHandler;
 
-        public LocalPlayer(IMultiModePlayerInputHandler playerInputHandler)
+        public LocalPlayer(IActivatablePlayerInputHandler playerInputHandler)
         {
             _playerInputHandler = playerInputHandler;
         }
 
         public IPlayerInputHandler PlayerInputHandler => _playerInputHandler;
 
-        public void SetGameplayInputMode()
-            => _playerInputHandler.SetGameInputMode();
+        public void ActivateInput()
+            => _playerInputHandler.Activate();
 
-        public void SetUIInputMode()
-            => _playerInputHandler.SetUIInputMode();
+        public void DeactivateInput()
+            => _playerInputHandler.Deactivate();
     }
 }

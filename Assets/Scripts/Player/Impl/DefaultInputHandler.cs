@@ -7,7 +7,7 @@ using UnityEngine.InputSystem.UI;
 namespace MIG.Player.Impl
 {
     public sealed class DefaultInputHandler :
-        IMultiModePlayerInputHandler,
+        IActivatablePlayerInputHandler,
         PlayerControls.IGameplayActions
     {
         private PlayerControls _playerControls;
@@ -15,47 +15,43 @@ namespace MIG.Player.Impl
 
         public event Action<Vector2> OnMove;
 
+        private PlayerControls.GameplayActions GameplayActions
+            => _playerControls.Gameplay;
+
+        private PlayerControls.UIActions UIActions
+            => _playerControls.UI;
+
         public DefaultInputHandler(InputSystemUIInputModule inputModule)
         {
             _playerControls = new PlayerControls();
             _inputModule = inputModule;
-            SetupGameplayScheme();
-            SetupUIScheme();
-        }
-
-        public void SetGameInputMode()
-        {
-            _playerControls.UI.Disable();
-            _playerControls.Gameplay.Enable();
-        }
-
-        public void SetUIInputMode()
-        {
-            _playerControls.Gameplay.Disable();
+            SetupGameplayActions();
+            SetupUIActions();
             _playerControls.UI.Enable();
         }
 
-        private void SetupGameplayScheme()
-        {
-            _playerControls.Gameplay.SetCallbacks(this);
-        }
+        public void Activate()
+            => GameplayActions.Enable();
 
-        private void SetupUIScheme()
+        public void Deactivate()
+            => GameplayActions.Disable();
+
+        private void SetupGameplayActions()
+            => GameplayActions.SetCallbacks(this);
+
+        private void SetupUIActions()
         {
-            var uiActions = _playerControls.UI;
             _inputModule.UnassignActions();
 
-            _inputModule.submit = uiActions.Submit.GetActionReference();
-            _inputModule.cancel = uiActions.Cancel.GetActionReference();
-            _inputModule.move = uiActions.Navigate.GetActionReference();
-            _inputModule.leftClick = uiActions.Click.GetActionReference();
-            _inputModule.point = uiActions.Point.GetActionReference();
-            _inputModule.scrollWheel = uiActions.ScrollWheel.GetActionReference();
+            _inputModule.submit = UIActions.Submit.GetActionReference();
+            _inputModule.cancel = UIActions.Cancel.GetActionReference();
+            _inputModule.move = UIActions.Navigate.GetActionReference();
+            _inputModule.leftClick = UIActions.Click.GetActionReference();
+            _inputModule.point = UIActions.Point.GetActionReference();
+            _inputModule.scrollWheel = UIActions.ScrollWheel.GetActionReference();
         }
 
         void PlayerControls.IGameplayActions.OnMove(InputAction.CallbackContext context)
-        {
-            OnMove?.Invoke(context.ReadValue<Vector2>());
-        }
+            => OnMove?.Invoke(context.ReadValue<Vector2>());
     }
 }

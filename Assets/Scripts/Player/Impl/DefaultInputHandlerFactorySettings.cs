@@ -8,7 +8,9 @@ namespace MIG.Player.Impl
         AssetConsts.CREATE_ASSET_ROOT_MENU + "Input/" + nameof(DefaultInputHandlerFactorySettings))]
     public sealed class DefaultInputHandlerFactorySettings : ScriptableObject
     {
-        [SerializeField] [CheckObject] private InputSystemUIInputModule _inputModulePrefab;
+        [SerializeField]
+        [CheckObject]
+        private InputSystemUIInputModule _inputModulePrefab;
 
         public InputSystemUIInputModule InputModulePrefab => _inputModulePrefab;
     }

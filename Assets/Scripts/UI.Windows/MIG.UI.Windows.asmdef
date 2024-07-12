@@ -3,7 +3,9 @@
     "rootNamespace": "MIG.UI.Windows",
     "references": [
         "GUID:c7e6a54e6e789184795e5208a563a2ae",
-        "GUID:b0f30582c8ba1fe469d1b102b4ec650d"
+        "GUID:b0f30582c8ba1fe469d1b102b4ec650d",
+        "GUID:b87efe492f773c048b72ace3a450e8cd",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

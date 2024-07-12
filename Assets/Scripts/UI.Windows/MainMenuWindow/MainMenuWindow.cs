@@ -7,8 +7,13 @@ namespace MIG.UI.Windows
 {
     public sealed class MainMenuWindow : AbstractWindow, IMainMenuWindow
     {
-        [SerializeField] [CheckObject] private Button _playButton;
-        [SerializeField] [CheckObject] private Button _quitButton;
+        [SerializeField]
+        [CheckObject]
+        private Button _playButton;
+
+        [SerializeField]
+        [CheckObject]
+        private Button _quitButton;
 
         public event Action OnPlayGameClick;
         public event Action OnQuitGameClick;

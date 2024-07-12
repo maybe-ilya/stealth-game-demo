@@ -1,0 +1,17 @@
+{
+    "name": "MIG.Camera",
+    "rootNamespace": "MIG.Camera",
+    "references": [
+        "GUID:c7e6a54e6e789184795e5208a563a2ae",
+        "GUID:53534babda9d6ac49a88dc0d2135c39c"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

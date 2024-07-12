@@ -30,9 +30,10 @@ namespace MIG.Main
 
                 case PLAY_GAME_SCENE_INDEX:
                     return _playGameScopeFactory.Create();
-                
+
                 default:
-                    throw new ArgumentException($"No scene scope factory for {_appScope.SceneDataService.CurrentSceneName}");
+                    throw new ArgumentException(
+                        $"No scene scope factory for {_appScope.SceneDataService.CurrentSceneName}");
             }
         }
     }

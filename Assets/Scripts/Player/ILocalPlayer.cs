@@ -4,8 +4,8 @@ namespace MIG.Player
 {
     public interface ILocalPlayer
     {
-        void SetGameplayInputMode();
-        void SetUIInputMode();
+        void ActivateInput();
+        void DeactivateInput();
         IPlayerInputHandler PlayerInputHandler { get; }
     }
 }

@@ -1,0 +1,18 @@
+{
+    "name": "MIG.Navigation",
+    "rootNamespace": "MIG.Navigation",
+    "references": [
+        "GUID:c7e6a54e6e789184795e5208a563a2ae",
+        "GUID:3b2f41c86b57bc749b1e0a1288f88f85",
+        "GUID:b87efe492f773c048b72ace3a450e8cd"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

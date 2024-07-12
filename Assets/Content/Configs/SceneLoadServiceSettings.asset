@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31375e26d6690614dae61601b48b3da1, type: 3}
   m_Name: SceneLoadServiceSettings
   m_EditorClassIdentifier: 
-  _emulatedDelayInSeconds: 5
+  _emulatedDelayInSeconds: 2

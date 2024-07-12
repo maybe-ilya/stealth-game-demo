@@ -19,7 +19,10 @@ namespace MIG.Game
         public void Play()
             => _stateMachine.ChangeState<IPlayGameState>();
 
-        public void Finish()
-            => _stateMachine.ChangeState<IFinishGameState>();
+        public void Finish(GameModeResultData resultData)
+            => _stateMachine.ChangeState<IFinishGameState, GameModeResultData>(resultData);
+
+        public void Cancel()
+            => _stateMachine.ChangeState<ICancelGameState>();
     }
 }

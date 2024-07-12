@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Bandit_Rifle_Anim_Override_Ctrl
+  m_Controller: {fileID: 9100000, guid: 8a74942e528a6b7408129a1b0c328947, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: b381aa3e9fce1914faec7f4472a3415c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e378e7c2ecd158b41bd0eb6ba7e0bdd3, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a0f08d3f808b38c4583bc85eb10878c5, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 3c4c1547374c51a47aa12ba6860ebab4, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 40df194ae0c3a164c905ce47e194d3f2, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 2c99f82eda602e54fbe8ebe5fdea0a94, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 86e07f1210c375947a0f18ff810edac9, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e64390e51ca782e419cfb3cd30bec404, type: 2}

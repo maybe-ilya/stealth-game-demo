@@ -6,8 +6,13 @@ namespace MIG.API
     [Serializable]
     public struct LogChannel : IEquatable<LogChannel>
     {
-        [SerializeField] [HideInInspector] private string _name;
-        [SerializeField] [HideInInspector] private int _hash;
+        [SerializeField]
+        [HideInInspector]
+        private string _name;
+
+        [SerializeField]
+        [HideInInspector]
+        private int _hash;
 
         public LogChannel(string name)
         {
@@ -18,7 +23,6 @@ namespace MIG.API
         public override int GetHashCode()
             => _hash;
 
-
         public override bool Equals(object obj)
             => obj is LogChannel channel && Equals(channel);
 
@@ -27,5 +31,7 @@ namespace MIG.API
 
         public override string ToString()
             => _name;
+
+        public static implicit operator LogChannel(string name) => new(name);
     }
 }

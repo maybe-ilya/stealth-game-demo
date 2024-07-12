@@ -1,0 +1,7 @@
+{
+  "name": "MIG.GameActors",
+  "rootNamespace": "MIG.GameActors",
+  "references": [
+    "GUID:c7e6a54e6e789184795e5208a563a2ae"
+  ]
+}

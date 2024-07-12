@@ -15,5 +15,8 @@ namespace MIG.Main
         ITimerService TimerService { get; }
         IUIService UIService { get; }
         ILoadingScreenService LoadingScreenService { get; }
+        IGameActorService GameActorService { get; }
+        INavigationManagerUpdater NavigationManagerUpdater { get; }
+        IEscapeModeTimerNotifyInvoker EscapeModeTimerNotifyInvoker { get; }
     }
 }

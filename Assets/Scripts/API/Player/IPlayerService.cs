@@ -2,8 +2,8 @@ namespace MIG.API
 {
     public interface IPlayerService : IService, IInitializableService
     {
-        void SetGameplayInputMode();
-        void SetUIInputMode();
+        void ActivateInput();
+        void DeactivateInput();
         IPlayerInputHandler PlayerInputHandler { get; }
     }
 }

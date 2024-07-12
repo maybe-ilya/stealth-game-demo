@@ -9,6 +9,7 @@ namespace MIG.Time
         public int Id { get; }
         public float Duration { get; }
         public float RemainingTime { get; private set; }
+        public float Ratio => RemainingTime / Duration;
         public DateTime ExpireTime { get; }
         public TimeSpan RemainingTimeSpan => ExpireTime - _timeService.Now;
 

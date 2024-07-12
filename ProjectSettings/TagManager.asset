@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - FxTemporaire
   layers:
   - Default
   - TransparentFX
@@ -11,6 +12,10 @@ TagManager:
   - 
   - Water
   - UI
+  - Player
+  - Bandit
+  - PlayerTrigger
+  - BanditTrigger
   - 
   - 
   - 
@@ -32,11 +37,7 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - LoadingScreen
   m_SortingLayers:
   - name: Default
     uniqueID: 0

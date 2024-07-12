@@ -21,7 +21,8 @@ namespace MIG.Time
         private readonly Dictionary<int, ITimer> _runningTimers = new();
         private readonly HashSet<int> _timerIdsToExecute = new(), _timerIdsToStop = new();
 
-        public event Action<int, float> TimerUpdated;
+        public event Action<TimerUpdateData> OnTimerUpdated;
+        public event Action<int> OnTimerStopped;
 
         public TimerService(ITimerFactory timerFactory)
         {
@@ -52,6 +53,7 @@ namespace MIG.Time
             {
                 _runningTimers.Remove(timerId);
                 _timerIdsToExecute.Remove(timerId);
+                OnTimerStopped?.Invoke(timerId);
             }
 
             _timerIdsToStop.Clear();
@@ -60,12 +62,19 @@ namespace MIG.Time
             foreach (var (timerId, timer) in _runningTimers)
             {
                 timer.Update(deltaTime);
-                TimerUpdated?.Invoke(timerId, timer.RemainingTime);
+                var isTriggered = timer.RemainingTime < math.EPSILON;
 
-                if (timer.RemainingTime < math.EPSILON)
+                if (isTriggered)
                 {
                     _timerIdsToExecute.Add(timerId);
                 }
+
+                OnTimerUpdated?.Invoke(new TimerUpdateData(
+                    timerId: timerId,
+                    isTriggered: isTriggered,
+                    remainingTime: timer.RemainingTime,
+                    remainingTimeSpan: timer.RemainingTimeSpan,
+                    ratio: timer.Ratio));
             }
 
             foreach (var timerId in _timerIdsToExecute)
